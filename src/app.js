@@ -3,10 +3,11 @@ require('./style.scss');
 
 import $ from 'jquery';
 
-
 $(document).ready(() => {
-  const boilerPlateTemplate = `<h1>Hello World!</h1>`;
-
+  const boilerPlateTemplate = `<div class="welcome-wrapper">
+                                  <h1>Hello World!</h1>
+                                  <p>Welcome to the Vanilla JS Template!</p>
+                               </div>`;
 
   $('body').append(boilerPlateTemplate);
 });
